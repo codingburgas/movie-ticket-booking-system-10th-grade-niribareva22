@@ -135,6 +135,7 @@
     <ClInclude Include="include\pages\userDashboard.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\auth\login.cpp" />
     <ClCompile Include="src\auth\registerAdmin.cpp" />
     <ClCompile Include="src\auth\registerUser.cpp" />
