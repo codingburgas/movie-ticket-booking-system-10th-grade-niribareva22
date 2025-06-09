@@ -1,5 +1,7 @@
 #include <iostream>
 #include "../../include/pages/mainMenu.h"
+#include "../../include/auth/registerAdmin.h"
+
 
 void displayMainMenu() {
     std::cout << "========== Main Menu ==========" << std::endl;
@@ -13,17 +15,28 @@ void displayMainMenu() {
     switch (choice) {
     case 1:
         std::cout << "Login selected!" << std::endl;
-        //to add login func
+        //log
         break;
     case 2:
         std::cout << "Register selected!" << std::endl;
-        //to add reg func
-        break;
+        std::cout << "Select account type: 1. User or 2. Admin" << std::endl;
+        int regChoice;
+        std::cin >> regChoice;
+        switch (regChoice) {
+        case 1:
+            std::cout << "User registration selected." << std::endl;
+            //regU
+            break;
+        case 2:
+            std::cout << "Admin registration selected." << std::endl;
+            registerAdmin();
+            break;
+        }
     case 3:
         std::cout << "Exiting application." << std::endl;
         break;
     default:
         std::cout << "Invalid choice." << std::endl;
-        displayMainMenu();
+        break;
     }
 }
