@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../../include/pages/mainMenu.h"
 #include "../../include/auth/registerAdmin.h"
+#include "../../include/auth/registerUser.h"
 
 
 void displayMainMenu() {
@@ -25,7 +26,7 @@ void displayMainMenu() {
         switch (regChoice) {
         case 1:
             std::cout << "User registration selected." << std::endl;
-            //regU
+            registerUser();
             break;
         case 2:
             std::cout << "Admin registration selected." << std::endl;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "../../include/auth/registerAdmin.h"
 
 void registerAdmin() {

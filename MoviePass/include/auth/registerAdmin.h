@@ -1,6 +1,4 @@
-#pragma once 
-#include <iostream>
-#include <fstream> 
+#pragma once
 
 #ifndef REGISTER_ADMIN_H
 #define REGISTER_ADMIN_H
