@@ -1,6 +1,3 @@
-#ifndef MAIN_MENU_H
-#define MAIN_MENU_H
+#pragma once
 
 void displayMainMenu();
-
-#endif // MAIN_MENU_H
