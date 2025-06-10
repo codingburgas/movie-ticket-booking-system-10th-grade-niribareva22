@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string>
 #include "../../include/auth/login.h"
+#include "../../include/pages/userDashboard.h" 
+#include "../../include/pages/adminDashboard.h"  
 
 void loginUser() {
     int accountType;
@@ -45,9 +47,13 @@ void loginUser() {
         std::string role;
         if (accountType == 1) {
             role = "User";
+            std::cout << role << " login successful. Welcome, " << inputUsername << "!" << std::endl;
+            userDashboard(inputUsername);
         }
         else {
             role = "Admin";
+            std::cout << role << " login successful. Welcome, " << inputUsername << "!" << std::endl;
+            adminDashboard(inputUsername);
         }
 
         std::cout << role << " login successful. Welcome, " << inputUsername << "!" << std::endl;
