@@ -56,9 +56,5 @@ void loginUser() {
             adminDashboard(inputUsername);
         }
 
-        std::cout << role << " login successful. Welcome, " << inputUsername << "!" << std::endl;
-    }
-    else {
-        std::cout << "Login failed. Invalid username or password." << std::endl;
     }
 }

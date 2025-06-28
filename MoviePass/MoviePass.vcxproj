@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="addMovie.h" />
     <ClInclude Include="include\auth\login.h" />
     <ClInclude Include="include\auth\registerAdmin.h" />
     <ClInclude Include="include\auth\registerUser.h" />
@@ -139,6 +142,7 @@
     <ClCompile Include="src\auth\login.cpp" />
     <ClCompile Include="src\auth\registerAdmin.cpp" />
     <ClCompile Include="src\auth\registerUser.cpp" />
+    <ClCompile Include="src\pages\addMovie.cpp" />
     <ClCompile Include="src\pages\adminDashboard.cpp" />
     <ClCompile Include="src\pages\mainMenu.cpp" />
     <ClCompile Include="src\pages\userDashboard.cpp" />
