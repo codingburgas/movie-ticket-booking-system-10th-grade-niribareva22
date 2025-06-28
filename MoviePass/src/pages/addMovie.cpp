@@ -4,6 +4,7 @@
 #include <string>
 
 void AddMovie::addMovie() {
+    system("cls");
     std::string movieTitle;
     std::string movieGenre;
     int releaseYear;

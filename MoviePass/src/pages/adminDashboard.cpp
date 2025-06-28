@@ -6,6 +6,7 @@
 
 
 void adminDashboard(const std::string& username) {
+    system("cls");
     std::cout << "=== Welcome to the Admin Dashboard, " << username << "! ===" << std::endl;
     std::cout << "Please choose an option:" << std::endl;
     std::cout << "1. Add a movie" << std::endl;

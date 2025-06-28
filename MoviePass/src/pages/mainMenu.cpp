@@ -6,6 +6,7 @@
 
 
 void displayMainMenu() {
+    system("cls");
     std::cout << "========== Main Menu ==========" << std::endl;
     std::cout << "1. Login" << std::endl;
     std::cout << "2. Register" << std::endl;

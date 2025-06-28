@@ -3,6 +3,7 @@
 #include "../../include/auth/registerUser.h"
 
 void registerUser() {
+    system("cls");
     std::string username, password;
     std::ofstream userAccFile("userAccounts.txt", std::ios_base::out | std::ios_base::app);
 

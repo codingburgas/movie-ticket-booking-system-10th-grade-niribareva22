@@ -3,6 +3,7 @@
 #include "../../include/auth/registerAdmin.h"
 
 void registerAdmin() {
+    system("cls");
     std::string username, password;
     std::ofstream adminAccFile("adminAccounts.txt", std::ios_base::out | std::ios_base::app);
 

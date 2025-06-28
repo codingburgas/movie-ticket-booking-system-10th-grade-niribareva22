@@ -6,6 +6,7 @@
 #include "../../include/pages/adminDashboard.h"  
 
 void loginUser() {
+    system("cls");
     int accountType;
     std::string inputUsername, inputPassword;
     std::string fileUsername, filePassword;
