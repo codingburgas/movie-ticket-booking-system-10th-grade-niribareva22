@@ -134,6 +134,7 @@
     <ClInclude Include="include\auth\registerAdmin.h" />
     <ClInclude Include="include\auth\registerUser.h" />
     <ClInclude Include="include\pages\adminDashboard.h" />
+    <ClInclude Include="include\pages\deleteMovie.h" />
     <ClInclude Include="include\pages\mainMenu.h" />
     <ClInclude Include="include\pages\userDashboard.h" />
   </ItemGroup>
@@ -144,6 +145,7 @@
     <ClCompile Include="src\auth\registerUser.cpp" />
     <ClCompile Include="src\pages\addMovie.cpp" />
     <ClCompile Include="src\pages\adminDashboard.cpp" />
+    <ClCompile Include="src\pages\deleteMovie.cpp" />
     <ClCompile Include="src\pages\mainMenu.cpp" />
     <ClCompile Include="src\pages\userDashboard.cpp" />
   </ItemGroup>

@@ -48,6 +48,9 @@
     <ClInclude Include="addMovie.h">
       <Filter>Header Files\pages</Filter>
     </ClInclude>
+    <ClInclude Include="include\pages\deleteMovie.h">
+      <Filter>Header Files\pages</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\auth\registerAdmin.cpp">
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\pages\addMovie.cpp">
+      <Filter>Source Files\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pages\deleteMovie.cpp">
       <Filter>Source Files\pages</Filter>
     </ClCompile>
   </ItemGroup>
