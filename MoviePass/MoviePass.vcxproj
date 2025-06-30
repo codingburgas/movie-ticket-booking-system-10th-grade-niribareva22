@@ -137,6 +137,7 @@
     <ClInclude Include="include\pages\deleteMovie.h" />
     <ClInclude Include="include\pages\mainMenu.h" />
     <ClInclude Include="include\pages\userDashboard.h" />
+    <ClInclude Include="include\updateMovie.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="src\pages\adminDashboard.cpp" />
     <ClCompile Include="src\pages\deleteMovie.cpp" />
     <ClCompile Include="src\pages\mainMenu.cpp" />
+    <ClCompile Include="src\pages\updateMovie.cpp" />
     <ClCompile Include="src\pages\userDashboard.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

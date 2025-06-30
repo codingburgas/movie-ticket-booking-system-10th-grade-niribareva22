@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-class AddMovie {
+class AddMovie{
 public:
     void addMovie();
 };

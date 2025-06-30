@@ -1,6 +1,6 @@
 #pragma once
 
-class DeleteMovie {
+class DeleteMovie{
 public:
     void deleteMovie();
 };

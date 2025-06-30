@@ -4,6 +4,7 @@
 #include "../../include/pages/mainMenu.h"
 #include "../../include/pages/addMovie.h"
 #include "../../include/pages/deleteMovie.h"
+#include "../../include/pages/updateMovie.h"
 
 
 
@@ -20,6 +21,7 @@ void adminDashboard(const std::string& username) {
     std::cin >> choice;
     AddMovie adder;
     DeleteMovie deleter;
+    UpdateMovie updater;
     switch (choice) {
     case 1:
         std::cout << "You chose to add a movie." << std::endl;
@@ -31,7 +33,7 @@ void adminDashboard(const std::string& username) {
         break;
     case 3:
         std::cout << "You chose to update a movie." << std::endl;
-      
+        updater.updateMovie();
         break;
     case 4:
         std::cout << "Exiting the dashboard." << std::endl;
