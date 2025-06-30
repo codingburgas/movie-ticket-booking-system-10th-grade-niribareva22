@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "../../include/auth/registerAdmin.h"
+#include "../../include/pages/adminDashboard.h"
 
 void registerAdmin() {
     system("cls");
@@ -14,5 +15,5 @@ void registerAdmin() {
     std::cout << "Enter admin password: ";
     std::cin >> password;
     adminAccFile << password<<std::endl;
-    
+    adminDashboard(username);
 }

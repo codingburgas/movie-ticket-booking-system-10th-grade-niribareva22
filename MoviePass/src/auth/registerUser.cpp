@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "../../include/auth/registerUser.h"
+#include "../../include/pages/userDashboard.h"
 
 void registerUser() {
     system("cls");
@@ -14,5 +15,5 @@ void registerUser() {
     std::cout << "Enter user's password: ";
     std::cin >> password;
     userAccFile << password << std::endl;
-
+    userDashboard(username);
 }
