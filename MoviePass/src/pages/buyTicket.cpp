@@ -60,7 +60,7 @@ void BuyTicket::buyTicket() {
     char seats[4][8];
     for (int r = 0; r < 4; r++) {
         for (int c = 0; c < 8; c++) {
-            seats[r][c] = 'O';
+            seats[r][c] = '_';
         }
     }
 
@@ -85,7 +85,7 @@ void BuyTicket::buyTicket() {
         }
     }
 
-    std::cout << "Seat Map (O = free, X = booked):" << std::endl;
+    std::cout << "Seat Map ( _ = free, X = booked):" << std::endl;
     for (int r = 0; r < 4; r++) {
         std::cout << char('A' + r) << " ";
         for (int c = 0; c < 8; c++) {
@@ -131,4 +131,40 @@ void BuyTicket::buyTicket() {
     outFile.close();
 
     std::cout << "Successfully booked seat " << newSeat << "!" << std::endl;
+
+    int paymentChoice;
+    std::cout << "Choose payment method:" << std::endl;
+    std::cout << "1. Cash" << std::endl;
+    std::cout << "2. Card" << std::endl;
+    std::cout << "Enter choice: ";
+    std::cin >> paymentChoice;
+    std::cin.ignore();
+
+    if (paymentChoice == 1) {
+        std::cout << "You chose to pay with cash." << std::endl;
+        std::cout << "Please pay in person at the cinema counter." << std::endl;
+    }
+    else if (paymentChoice == 2) {
+        std::string name, cardNumber;
+        std::cout << "You chose to pay with card." << std::endl;
+        std::cout << "Enter your name: ";
+        std::getline(std::cin, name);
+        bool validCard = false;
+        while (!validCard) {
+            std::cout << "Enter card number (8 to 19 characters): ";
+            std::getline(std::cin, cardNumber);
+
+            if (cardNumber.length() >= 8 && cardNumber.length() <= 19) {
+                validCard = true;
+            }
+            else {
+                std::cout << "Card number must be between 8 and 19 characters." << std::endl;
+            }
+        }
+        std::cout << "Payment processed. Thank you, " << name << "!" << std::endl;
+    }
+    else {
+        std::cout << "Invalid payment option. Payment not recorded." << std::endl;
+    }
 }
+
