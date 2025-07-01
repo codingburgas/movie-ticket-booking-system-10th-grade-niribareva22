@@ -3,6 +3,7 @@
 #include "../../include/pages/userDashboard.h"
 #include "../../include/pages/mainMenu.h"
 #include "../../include/pages/viewProjections.h"
+#include "../../include/pages/buyTicket.h"
 
 void userDashboard(const std::string& username) {
     system("cls");
@@ -16,6 +17,7 @@ void userDashboard(const std::string& username) {
     std::cin >> choice;
 
     ViewProjections viewer;
+    BuyTicket buyer;
 
     switch (choice) {
     case 1:
@@ -28,7 +30,7 @@ void userDashboard(const std::string& username) {
         break;
     case 2:
         std::cout << "You chose to buy a ticket." << std::endl;
-
+        buyer.buyTicket();
         std::cout << "Press Enter to return to the dashboard..." << std::endl;
         std::cin.ignore();
         std::cin.get();

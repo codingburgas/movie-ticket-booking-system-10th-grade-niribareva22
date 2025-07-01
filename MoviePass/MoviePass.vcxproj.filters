@@ -57,6 +57,9 @@
     <ClInclude Include="include\pages\viewProjections.h">
       <Filter>Header Files\pages</Filter>
     </ClInclude>
+    <ClInclude Include="include\pages\buyTicket.h">
+      <Filter>Header Files\pages</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\auth\registerAdmin.cpp">
@@ -90,6 +93,9 @@
       <Filter>Source Files\pages</Filter>
     </ClCompile>
     <ClCompile Include="src\pages\viewProjections.cpp">
+      <Filter>Source Files\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pages\buyTicket.cpp">
       <Filter>Source Files\pages</Filter>
     </ClCompile>
   </ItemGroup>
