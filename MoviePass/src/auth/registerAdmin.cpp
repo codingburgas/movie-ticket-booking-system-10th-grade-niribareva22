@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <functional>
 #include "../../include/auth/registerAdmin.h"
 #include "../../include/pages/adminDashboard.h"
 
@@ -14,6 +15,10 @@ void registerAdmin() {
     adminAccFile <<"@"<< username << std::endl;
     std::cout << "Enter admin password: ";
     std::cin >> password;
-    adminAccFile << password<<std::endl;
+
+    std::hash<std::string> hasher;
+    size_t hashedPassword = hasher(password);
+
+    adminAccFile << hashedPassword <<std::endl;
     adminDashboard(username);
 }

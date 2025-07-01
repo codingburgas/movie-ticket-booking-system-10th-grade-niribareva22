@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <functional>
 #include "../../include/auth/registerUser.h"
 #include "../../include/pages/userDashboard.h"
 
@@ -14,6 +15,10 @@ void registerUser() {
     userAccFile << "@" << username << std::endl;
     std::cout << "Enter user's password: ";
     std::cin >> password;
-    userAccFile << password << std::endl;
+
+    std::hash<std::string> hasher;
+    size_t hashedPassword = hasher(password);
+
+    userAccFile << hashedPassword << std::endl;
     userDashboard(username);
 }
