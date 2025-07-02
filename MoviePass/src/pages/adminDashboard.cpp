@@ -19,13 +19,14 @@ void adminDashboard(const std::string& username) {
 
         int choice;
         std::cin >> choice;
-        AddMovie adder;
+        AddMovie movie;
         DeleteMovie deleter;
         UpdateMovie updater;
         switch (choice) {
         case 1:
             std::cout << "You chose to add a movie." << std::endl;
-            adder.addMovie();
+            movie.inputDetails();
+            movie.saveToFile();
             std::cout << "Press Enter to return to the dashboard..." << std::endl;
             std::cin.ignore();
             std::cin.get();
