@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <functional> 
 #include "../../include/auth/login.h"
 #include "../../include/pages/userDashboard.h" 
 #include "../../include/pages/adminDashboard.h"  
@@ -30,13 +31,17 @@ void loginUser() {
     std::cout << "Enter password: ";
     std::cin >> inputPassword;
 
+    std::hash<std::string> hasher;
+    size_t hashedInputPassword = hasher(inputPassword);
+    std::string hashedInputStr = std::to_string(hashedInputPassword);
+
     std::ifstream accFile(filePath);
     bool loginSuccess = false;
 
     while (std::getline(accFile, fileUsername) && std::getline(accFile, filePassword)) {
         if (fileUsername[0] == '@') fileUsername = fileUsername.substr(1);
 
-        if (fileUsername == inputUsername && filePassword == inputPassword) {
+        if (fileUsername == inputUsername && filePassword == hashedInputStr) {
             loginSuccess = true;
             break;
         }
